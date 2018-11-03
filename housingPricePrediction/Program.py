@@ -3,10 +3,14 @@ import ModelEngine as mlEngine
 import DataLoader as dataLoader
 import DataPreProcess as preproc
 import ConfigManager as cmfmagt
+import Logger as lgr 
 def app_main():
 	try:
+		logger = lgr.Logger()
 		print("--------application starting--------------")
+		logger.info("--------application starting--------------")
 		print("--------loading data----------------------")
+		logger.info("--------loading data----------------------")
 		dl = dataLoader.DataLoader()
 		train_X, test_X =train_test_split(dl.DataFrame.copy(), test_size=0.3, random_state=42)
 		# label = train_X["median_house_value"].copy()
