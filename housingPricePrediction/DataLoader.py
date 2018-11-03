@@ -21,8 +21,8 @@ class DataLoader():
 
 
 if __name__ == "__main__":
-	#dl = DataLoader()
-	#print(dl.DataFrame.head())
+	dl = DataLoader()
+	print(dl.DataFrame.head())
 
 
 
