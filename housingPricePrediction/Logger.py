@@ -21,6 +21,6 @@ class Logger():
 		self.logger.warning(msg)
 
 if __name__ == "__main__":
-	#logger = Logger()
-	#logger.info("this is info")
-	#logger.error("this is error")
+	logger = Logger()
+	logger.info("this is info")
+	logger.error("this is error")
